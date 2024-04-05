@@ -9,6 +9,7 @@
 
 <body>
     <h1>Test</h1>
+    {{$message}}
 </body>
 
 </html>
