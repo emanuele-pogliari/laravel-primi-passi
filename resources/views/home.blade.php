@@ -10,6 +10,15 @@
 <body>
     <h1>Test</h1>
     {{$message}}
+
+    <h4>{{$boolean}}</h4>
+    <ul>
+        @foreach($array as $value)
+        <li>
+            {{$value}}
+        </li>
+        @endforeach
+    </ul>
 </body>
 
 </html>

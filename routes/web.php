@@ -16,5 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $message = "Hello World!";
 
-    return view('home', compact("message"));
+    $boolean = "Languages and frameworks learned so far:";
+    $array = ["html", "css", "javascript", "vue", "vite", "php", "database", "mysql"];
+
+    return view('home', compact("message", "boolean", "array"));
 });
