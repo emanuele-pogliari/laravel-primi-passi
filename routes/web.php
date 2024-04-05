@@ -17,9 +17,9 @@ Route::get('/', function () {
     $message = "Hello World!";
 
     $boolean = "Languages and frameworks learned so far:";
-    $array = ["html", "css", "javascript", "vue", "vite", "php", "database", "mysql"];
+    $arrayImg = ["assets/images/html.png", "assets/images/css.png", "assets/images/js.png", "assets/images/vue.png", "assets/images/vite.png", "assets/images/php.png", "assets/images/db.png", "assets/images/mysql.png"];
 
-    return view('home', compact("message", "boolean", "array"));
+    return view('home', compact("message", "boolean", "arrayImg"));
 });
 
 Route::get('/page2', function () {
